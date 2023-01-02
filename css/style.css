@@ -1,0 +1,173 @@
+:root{
+    --ff1: 'Jost', sans-serif;
+    --ff2: 'Open Sans', sans-serif;
+    --white: #ffffff;
+    --green: #87c500;
+    --black: #1a1f24;
+    --orange:#f75023;
+    --sayan: #656668;
+}
+/* =======Common CSS Start======= */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p,h1,h2,h3,h4,h5,h6{
+    line-height: 0.8;
+}
+img{
+    vertical-align: middle;
+}
+/* =======Common CSS End========= */
+
+/* ============Navbar Part start========== */
+.navbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 999;
+}
+.navbar-brand{
+
+}
+.navbar-nav .nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar-nav .nav-item:last-child{
+    padding-right: 0;
+}
+.navbar-nav .nav-item a{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--ff1);
+    transition: all linear .3s;
+}
+.navbar-nav .nav-item:hover a{
+    color: var(--white);
+}
+/* ============Navbar Part End============ */
+
+/* ==========Banner Part Start=========== */
+#banner{
+        background: url(../images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+    }
+.banner-content{
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between; 
+}
+.left-content .hello{
+    color: var(--orange);
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--ff1);
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+.left-content .name{
+    color: var(--black);
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--ff1);
+    margin-bottom: 35px;
+}
+.typed{
+    border-bottom: 3px dashed #f75023;
+}
+.left-content .possition{
+    color: var(--black);
+    font-size: 28px;
+    font-weight: 800;
+    font-family: var(--ff2);
+    margin-bottom: 45px;
+}
+.left-content .possition .creative{
+    color: var(--green);
+}
+.left-content .possition .city{
+    color: var(--green);
+}
+.left-content .text{
+    color: var(--sayan);
+    font-size: 23px;
+    font-weight: 500;
+    font-family: var(--ff2);
+    line-height: 1.5;
+}
+.banner-btn{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: safe;
+}
+
+.btn button{
+    background: var(--orange);
+    border: none;
+    border-radius: 25px;
+    transition: all linear.3s ease-in-out;
+    overflow: hidden;
+}
+.btn button a{
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    border: 2px solid #f75023;
+    padding: 14px 30px 10px;
+    position: relative;
+    
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--ff1);
+    transition: all linear.3s ease;
+}
+.btn button:hover{
+    background: none;
+}
+.btn button:hover a{
+    color: var(--black);
+}
+.icons{
+    margin-left: 50px;
+    display: flex;
+    justify-items: self-start;
+}
+.icons a{
+    text-decoration: none;
+    color: var(--black);
+}
+.icons a i{
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 5px;
+}
+.right-content{
+    position: relative;
+    margin-left: 45px;
+}
+/* ===========Banner Part End============ */
+/* ===========About Part End============ */
+#about{
+    background: var(--orange);
+    width: 100;
+    height: 100vh;
+}
+/* ===========About Part Start============ */
+
